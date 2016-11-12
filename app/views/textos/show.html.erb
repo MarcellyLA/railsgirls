@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @texto.titulo %>
+</p>
+
+<p>
+  <strong>Conteudo:</strong>
+  <%= @texto.conteudo %>
+</p>
+
+<p style="color: gray">
+  <strong>Author:</strong>
+  <%= @texto.author %>
+</p>
+
+<%= link_to 'Edit', edit_texto_path(@texto) %> |
+<%= link_to 'Back', textos_path %>

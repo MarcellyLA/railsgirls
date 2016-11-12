@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Atitude que vem do Alto!</h1>
+
+    <% @textos.each do |texto| %>
+
+        <h2><%= texto.titulo %></h2>
+        <p><%= truncate(texto.conteudo, length: 250) { link_to("Ver mais...", texto) } %></p>
+
+    <% end %>
+
+<br>
+
+<%= link_to 'New Texto', new_texto_path %>
